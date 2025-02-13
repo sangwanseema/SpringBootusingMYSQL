@@ -1,0 +1,106 @@
+IOC container : inversion of control:
+externalize the object creation
+IOC: spring create object for us using IOC
+IOC: contain all the objects
+Application context: it is a way to implement ioc container
+
+IOC and Application context are
+
+if @component annotation on the top any classes
+it means that IOC contain that class
+
+Annotation :can write for class ,interface , field , method
+it provides information for class, interface , field , method
+based on type of annotation
+
+Beans: it language of spring bean is an object
+@component :-> class is automatically registered as spring bean
+
+
+@springBootApplication
+annotation
+always apply on main class which contain method
+entry point of application
+3 task
+1) @configuration
+@Bean annotation apply on functions not on class
+ bean is made by @Component  and @RestController
+ if we use configuration on the top any class
+ then we can  create beans with the help of functions
+
+2)EnableAutoConfiguration:
+
+3)ComponentScan : IOC container or Application context
+we will do all work inside the base package else it will not
+be scanned
+
+@Autowired
+use to create object of a class
+ex Autowired
+   private Dog obj;
+    it means that we want an object of dog class
+
+RESTAPI:representational state transfer Application programming interface
+
+HTTP: GET--> to read , PUT--> to update  , POST--> to create  , DELETE--> to delete
+RESTAPI=url+HTTP
+url =ip+port+api end point
+
+
+@RestController
+
+
+
+controllers
+special type of classes  or components which handles http request
+
+method inside controller should be public so that they can be access and invoked by spring framework or external http request
+
+
+mongodb --> connection--> set the properties
+ inf form of key value pair
+ key:value
+
+
+ controller -->call services --->call repository
+
+
+
+ResponseEntity: it is class and is part of the springboot framework and is commonly
+used in springboot application
+to customize the http response
+It provide methods to setting the response status , headers and body
+you can us it to return different type of  data in your controller methods such as
+json , xml or html
+
+
+
+
+Add Lombok
+Its a library which automatically add setter,getter or constrcutors during compilation
+ whenwe add some depedency in pom.xml then represh it a small icon on right side then it download
+ depenecies
+
+and also give annotation on the top of entity class
+like @Getter ,@Setter etc
+
+
+classpath: list of jars and directories used by jvm
+priority
+cmd
+application .properties
+application.yml
+
+when we cretae an api it is recommended to test it
+two type
+1)unit testing
+2)Integeration testing
+Junit: java unit framework for unit testing
+
+
+code coverage
+--> tell how much code we tested
+
+
+
+
